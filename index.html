@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>asignment 9</title>
+</head>
+
+<body>
+    <section>
+        <div class="book text-center m-lg-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <hr>
+        <h2 id="i" class="text-center p-lg-5">
+            <span><i class="fa-solid fa-bookmark"></i></span>
+            Bookmark your favorite sites
+            <span><i class="fa-solid fa-bookmark"></i></span>
+        </h2>
+        <hr/>
+
+        <div class="input container m-auto">
+            <label for=""> Site Name :</label>
+            <input type="text" class="form-control mb-3" name="" placeholder="Bookmark Name" id="SiteName" />
+
+            <label for=""> Site URL :</label>
+            <input type="text" class="form-control mb-3" name="" placeholder="Website URL" id="SiteURL" />
+
+            <button class="btn btn-outline-dark ps-5 pe-5 mt-4 mb-4" onclick="getSiteData()">
+                Submit
+            </button>
+        </div>
+        <table class="m-auto text-center w-75">
+            <thead class="bg-white">
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody class="" id="tBody">
+            </tbody>
+        </table>
+
+        <div id="alert" class="alert d-none">
+            <div class="image">
+                <img src="images/Screenshot 2023-07-24 050111.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
